@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+  --primary-color: #274c77;
+  --secondary-color: #6096ba;
+  --tertiary-color: #e7ecef;
+}
 
 h1 {
   padding: 1rem;
+}
+html {
 }

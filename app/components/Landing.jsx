@@ -2,11 +2,12 @@ import Image from 'next/image';
 
 const Landing = () => {
   return (
-    <div className='flex flex-col items-center md:pb-24'>
+    <div id='home' className='flex flex-col items-center md:pb-24 scroll-mt-36'>
       <h1 className='flex justify-center text-4xl text-center'>
-        Hello! My name is Adam Schrock
+        <span className='text-primary-color mr-4'>Hello!</span>
+        My name is Adam Schrock
       </h1>
-      <p className='flex justify-center text-lg p-4'>
+      <p className='flex justify-center text-lg p-4 dark:text-tertiary-color'>
         A Front-End Web Developer
       </p>
       <Image
@@ -29,7 +30,7 @@ const Landing = () => {
         <img className='w-10 h-10' src='/Linkedin-logos/Li-in-Bug.png' alt='' />
       </div>
       <svg
-        className='w-16 h-16 mt-8 md:mt-12 z-0 animate-bounce'
+        className='w-16 h-16 mt-8 md:mt-16 z-0 animate-bounce'
         xmlns='http://www.w3.org/2000/svg'
         fill='none'
         viewBox='0 0 24 24'
