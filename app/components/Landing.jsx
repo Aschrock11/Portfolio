@@ -2,22 +2,22 @@ import Image from 'next/image';
 
 const Landing = () => {
   return (
-    <div id='home' className='flex flex-col items-center md:pb-24 scroll-mt-36'>
-      <h1 className='flex justify-center text-4xl text-center'>
+    <div id='home' className='flex flex-col items-center md:pb-24 scroll-mt-24'>
+      <h1 className='flex flex-col md:flex-row justify-center text-4xl text-center'>
         <span className='text-primary-color mr-4'>Hello!</span>
         My name is Adam Schrock
       </h1>
-      <p className='flex justify-center text-lg p-4 dark:text-tertiary-color'>
+      <p className='flex justify-center text-lg p-4 dark:text-tertiary-color md:mb-4'>
         A Front-End Web Developer
       </p>
       <Image
-        className='p-4'
-        src={'/istockphoto-1335941248-612x612.jpeg'}
-        width={500}
-        height={500}
+        className='rounded-full'
+        src={'/adamspixelme.jpg'}
+        width={300}
+        height={300}
         alt='image'
       />
-      <div className='flex justify-center gap-4'>
+      <div className='mt-8 flex justify-center gap-4'>
         <img
           className='w-10 h-10 dark:hidden'
           src='/github-mark/github-mark.svg'
@@ -30,7 +30,7 @@ const Landing = () => {
         <img className='w-10 h-10' src='/Linkedin-logos/Li-in-Bug.png' alt='' />
       </div>
       <svg
-        className='w-16 h-16 mt-8 md:mt-16 z-0 animate-bounce'
+        className='w-16 h-16 mt-6 md:mt-16 z-0 animate-bounce'
         xmlns='http://www.w3.org/2000/svg'
         fill='none'
         viewBox='0 0 24 24'

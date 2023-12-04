@@ -15,29 +15,28 @@ const About = () => {
   return (
     <div
       id='about'
-      className='md:flex md:gap-16 md:h-[700px] md:items-center md: scroll-mt-2'
+      className='lg:flex md:items-center md: scroll-mt-2 md:gap-8'
     >
-      <div className='flex flex-col items-center md:w-[600px]'>
-        <h1 className='text-6xl md:mb-8'>About</h1>
-        <p className='md:text-left md:text-2xl md:leading-8  '>
+      <div className='flex flex-col items-center md:flex-1 p-4'>
+        <h1 className='text-4xl md:text-6xl '>About Me</h1>
+        <p className='text-center md:text-left md:text-2xl md:leading-8 max-w-[500px] '>
           I am a Front End Developer Based in Central Ohio.I Work with HTML,
           CSS, SASS, Javascript, React.JS, and most recently picked up
           Tailwindcss! I really enjoy learning new front-end technologies and
           making projects come to life!
         </p>
-        <p className='mt-4 md:text-left md:text-2xl'>
-          I also enjoy longboarding, Brazilian Jiu-Jitsu and gaming in my
-          freetime!
+        <p className='text-center mt-4 md:text-left md:text-2xl max-w-[500px]'>
+          I also enjoy travel, tennis, and gaming in my freetime!
         </p>
       </div>
-      <div className='flex flex-col text-center p-4 md:p-0 md:w-[600px]'>
-        <h1 className='text-6xl md:mb-8'>Skills</h1>
+      <div className='flex flex-col text-center'>
+        <h1 className='text-4xl md:text-6xl mb-8'>Skills</h1>
         <div className='flex justify-evenly'>
-          <div className='grid grid-cols-4 gap-12 md:gap-16 md:h-60'>
+          <div className='grid grid-cols-4 sm:gap-10 md:gap-20 '>
             {srcImages.map((image) => (
               <Image
                 src={image}
-                alt={'image'}
+                alt={image}
                 key={image}
                 width={75}
                 height={75}
