@@ -4,7 +4,7 @@ import Project from './Project';
 const Projects = () => {
   return (
     <div id='projects' className='flex flex-col items-center md:scroll-mt-20'>
-      <h1 className='text-4xl md:text-6xl mb-8'>Projects</h1>
+      <h1 className='text-4xl mb-8'>Projects</h1>
       <div className='grid md:grid-cols-2'>
         <Project
           src={'/disney-clone-screenshot.png'}
