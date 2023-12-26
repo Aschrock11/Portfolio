@@ -15,12 +15,12 @@ const About = () => {
   return (
     <div
       id='about'
-      className='lg:flex md:items-center md: scroll-mt-2 md:gap-8'
+      className='lg:flex md:items-center md: scroll-mt-2 md:gap-8 md:h-screen'
     >
       <div className='flex flex-col items-center md:flex-1 p-4'>
-        <h1 className='text-4xl md:text-6xl '>About Me</h1>
+        <h1 className='text-4xl md:text-6xl'>About Me</h1>
         <p className='text-center md:text-left md:text-2xl md:leading-8 max-w-[500px] '>
-          I am a Front End Developer Based in Central Ohio.I Work with HTML,
+          I am a Front End Developer Based in Central Ohio. I Work with HTML,
           CSS, SASS, Javascript, React.JS, and most recently picked up
           Tailwindcss! I really enjoy learning new front-end technologies and
           making projects come to life!
@@ -32,9 +32,10 @@ const About = () => {
       <div className='flex flex-col text-center'>
         <h1 className='text-4xl md:text-6xl mb-8'>Skills</h1>
         <div className='flex justify-evenly'>
-          <div className='grid grid-cols-4 sm:gap-10 md:gap-20 '>
+          <div className='grid grid-cols-4 sm:gap-10 md:gap-20'>
             {srcImages.map((image) => (
               <Image
+                className='hover:scale-150 transition-all'
                 src={image}
                 alt={image}
                 key={image}

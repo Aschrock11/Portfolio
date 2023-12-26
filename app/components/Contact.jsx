@@ -4,8 +4,8 @@ import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
-    <div className='w-full' id='contact'>
-      <h1 className='text-center text-4xl md:text-6xl'>Contact me</h1>
+    <div className='w-full h-screen flex flex-col justify-center' id='contact'>
+      <h1 className='text-center text-4xl md:text-6xl md:mb-8'>Contact me</h1>
       <div className='flex md:gap-12 justify-center'>
         <ContactForm />
         <div className='hidden md:flex'>
