@@ -27,7 +27,11 @@ const Landing = () => {
           src='/github-mark/github-mark-white.svg'
           alt=''
         />
-        <img className='w-10 h-10' src='/Linkedin-logos/Li-in-Bug.png' alt='' />
+        <img
+          className='w-10 h-10'
+          src='/LinkedIn-Logos/Li-In-Bug.png'
+          alt='linkedin logo'
+        />
       </div>
       <svg
         className='w-16 h-16 mt-6 md:mt-16 z-0 animate-bounce'
