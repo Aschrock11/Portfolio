@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Adam Schrock',
-  icon: '/favicon.ico',
+  icon: { icon: '/favicon.ico' },
 };
 
 export default function RootLayout({ children }) {
