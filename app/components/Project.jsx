@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Project = ({ src, title, skills, description, href }) => {
+const Project = ({ src, title, skills, description, href, gitHub }) => {
   return (
     <div className='flex flex-col items-center text-center border border-solid p-8 bg-slate-100 dark:bg-black'>
-      <a href={href}>
+      <a href={href} target={'_blank'}>
         <Image
           className='pt-4 cursor-pointer'
           src={src}
@@ -19,7 +19,7 @@ const Project = ({ src, title, skills, description, href }) => {
       <div className='flex flex-col items-center '>
         <p className='w-4/5 pb-4'>{description}</p>
         <div className='flex gap-2 justify-center'>
-          <a href={href}>
+          <a href={href} target={'_blank'}>
             <button className='flex items-center border border-solid dark:border-white border-black rounded-lg p-2 hover:bg-slate-200 transition-colors'>
               <svg
                 className='mr-2 h-5 w-5'
@@ -38,7 +38,7 @@ const Project = ({ src, title, skills, description, href }) => {
               Live Demo
             </button>
           </a>
-          <a href={href}>
+          <a href={gitHub} target={'_blank'}>
             <button className='flex items-center border border-solid dark:border-white border-black rounded-lg p-2 hover:bg-slate-200 transition-colors'>
               <svg
                 className='mr-2 h-5 w-5'

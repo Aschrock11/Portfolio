@@ -15,9 +15,9 @@ const About = () => {
   return (
     <div
       id='about'
-      className='lg:flex md:items-center md: scroll-mt-2 md:gap-8 md:h-screen'
+      className='lg:flex md:items-center md:scroll-mt-2 md:gap-8 md:h-screen mt-16 '
     >
-      <div className='flex flex-col items-center md:flex-1 p-4'>
+      <div className='flex flex-col items-center md:flex-1 lg:[500px]'>
         <h1 className='text-4xl'>About Me</h1>
         <p className='text-center md:text-left md:text-2xl md:leading-8 max-w-[500px] '>
           I am a Front End Developer Based in Central Ohio. I Work with HTML,
@@ -29,8 +29,9 @@ const About = () => {
           I also enjoy travel, tennis, and gaming in my freetime!
         </p>
       </div>
-      <div className='flex flex-col text-center'>
-        <h1 className='text-4xl md:text-6xl mb-8'>Skills</h1>
+
+      <div className='flex flex-col text-center lg:[500px] '>
+        <h1 className='text-4xl lg:mt-0 lg:pb-7'>Skills</h1>
         <div className='flex justify-evenly'>
           <div className='grid grid-cols-4 sm:gap-10 md:gap-20'>
             {srcImages.map((image) => (
