@@ -7,7 +7,9 @@ const Landing = () => {
       className='flex flex-col items-center md:pb-24 scroll-mt-24 md:h-screen'
     >
       <h1 className='flex flex-col md:flex-row justify-center text-4xl text-center'>
-        <span className='text-primary-color mr-4'>Hello!</span>
+        <span className='text-primary-color mr-4 hover:text-5xl transition-all'>
+          Hello!
+        </span>
         My name is Adam Schrock
       </h1>
       <p className='flex justify-center text-lg p-4 dark:text-tertiary-color md:mb-4'>
