@@ -33,7 +33,7 @@ const About = () => {
       <div className='flex flex-col text-center lg:[500px] '>
         <h1 className='text-4xl lg:mt-0 lg:pb-7'>Skills</h1>
         <div className='flex justify-evenly'>
-          <div className='grid grid-cols-4 sm:gap-10 md:gap-20'>
+          <div className='grid grid-cols-4 sm:gap-10 md:gap-20 items-center'>
             {srcImages.map((image) => (
               <Image
                 className='hover:scale-150 transition-all'
@@ -42,7 +42,6 @@ const About = () => {
                 key={image}
                 width={75}
                 height={75}
-                style={{ objectFit: 'contain' }}
               />
             ))}
           </div>
