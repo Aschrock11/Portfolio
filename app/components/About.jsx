@@ -13,12 +13,9 @@ const About = () => {
     '/next-js-icon-seeklogo.com.svg',
   ];
   return (
-    <div
-      id='about'
-      className='lg:flex md:items-center md:scroll-mt-2 md:gap-8 md:h-screen mt-16 '
-    >
+    <div id='about' className='lg:flex md:scroll-mt-2 md:gap-8 md:h-screen'>
       <div className='flex flex-col items-center md:flex-1 lg:[500px]'>
-        <h1 className='text-4xl'>About Me</h1>
+        <h1 className='text-4xl mt-0'>About Me</h1>
         <p className='text-center md:text-left md:text-2xl md:leading-8 max-w-[500px] '>
           I am a Front End Developer Based in Central Ohio. I Work with HTML,
           CSS, SASS, Javascript, React.JS, and most recently picked up

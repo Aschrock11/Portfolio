@@ -9,7 +9,7 @@ function Header() {
         'flex justify-between z-10 sticky top-0 p-10 shadow-xl bg-white dark:bg-black'
       }
     >
-      <div className='text-4xl dark:text-primary-color'>
+      <div className='text-4xl text-secondary-color'>
         <a href='#home'>AS</a>
       </div>
       <div className='flex justify-evenly gap-4 items-center'>

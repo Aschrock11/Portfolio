@@ -1,10 +1,13 @@
 'use client';
-import { stringify } from 'postcss';
 import React from 'react';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useTheme } from 'next-themes';
 
 export default function ContactForm() {
+  const { theme } = useTheme();
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -19,11 +22,11 @@ export default function ContactForm() {
       )
       .then(
         (result) => {
-          console.log(result.text);
           e.target.reset();
+          toast.success('Message sent!');
         },
         (error) => {
-          console.log(error.text);
+          toast.error('Message could not be sent! Please try again.');
         }
       );
   };
@@ -31,6 +34,7 @@ export default function ContactForm() {
     <div className='block max-w-lg rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 w-full md:w-1/2'>
       <form ref={form} onSubmit={sendEmail} method='post' acceptCharset='UTF-8'>
         <div>
+          <ToastContainer theme={theme} />
           <label htmlFor='name'>Name</label>
           <input
             name='user_name'
