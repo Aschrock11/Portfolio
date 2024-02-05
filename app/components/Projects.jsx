@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div
       id='projects'
-      className='flex flex-col items-center md:scroll-mt-20 md:mt-16'
+      className='flex flex-col items-center md:scroll-mt-32 md:mt-16'
     >
       <h1 className='text-4xl mb-8'>Projects</h1>
       <div className='grid md:grid-cols-2'>
