@@ -13,7 +13,10 @@ const About = () => {
     '/next-js-icon-seeklogo.com.svg',
   ];
   return (
-    <div id='about' className='lg:flex md:scroll-mt-2 md:gap-8 md:h-screen'>
+    <div
+      id='about'
+      className='lg:flex lg:scroll-mt-40 md:scroll-mt-36 md:gap-8 md:h-screen'
+    >
       <div className='flex flex-col items-center md:flex-1 lg:[500px]'>
         <h1 className='text-4xl mt-0'>About Me</h1>
         <p className='text-center md:text-left md:text-2xl md:leading-8 max-w-[500px] '>
